@@ -1,5 +1,6 @@
 ---
 import SideHeader from "@/components/SideHeader.astro";
+import "@/styles/global.css";
 ---
 
 <!doctype html>
@@ -12,6 +13,7 @@ import SideHeader from "@/components/SideHeader.astro";
     <title>Astro Basics</title>
   </head>
   <body>
+    <SideHeader />
     <slot />
   </body>
 </html>
