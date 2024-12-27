@@ -1,0 +1,44 @@
+---
+import { getEntry, render } from "astro:content";
+
+import ComponentLayout from "@/layouts/ComponentLayout.astro";
+import { cn } from "@/lib/utils";
+import { ChevronRightIcon } from "@heroicons/react/24/solid";
+
+export async function getStaticPaths() {
+  return [{ params: { slug: "button" } }];
+}
+
+const { slug } = Astro.params;
+const component = await getEntry("documents", slug);
+if (!component) {
+  return Astro.redirect("/404");
+}
+const { Content } = await render(component);
+---
+
+<ComponentLayout>
+  <main class={"relative py-6 lg:gap-10 lg:py-8 xl:grid"}>
+    <div class="mx-auto w-full min-w-0">
+      <div
+        class="mb-4 flex items-center space-x-1 text-sm text-muted-foreground"
+      >
+        <div class="truncate">Docs</div>
+        <ChevronRightIcon className="size-4" />
+        <div class="font-medium text-foreground">{component.data.title}</div>
+      </div>
+      <div class="space-y-2">
+        <h1 class={cn("scroll-m-20 text-4xl font-bold tracking-tight")}>
+          {component.data.title}
+        </h1>
+        <p class="text-balance text-lg text-muted-foreground">
+          {component.data.description}
+        </p>
+      </div>
+
+      <div class="pb-12 pt-8">
+        <Content />
+      </div>
+    </div>
+  </main>
+</ComponentLayout>
