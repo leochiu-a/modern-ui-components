@@ -3,6 +3,7 @@ import { defineConfig } from "astro/config";
 
 import vercelServerless from "@astrojs/vercel/serverless";
 import react from "@astrojs/react";
+import vue from "@astrojs/vue";
 import mdx from "@astrojs/mdx";
 import tailwind from "@astrojs/tailwind";
 
@@ -15,10 +16,11 @@ export default defineConfig({
   }),
 
   integrations: [
+    vue(),
     react(),
     tailwind({
       applyBaseStyles: false,
     }),
-    mdx(),
+    mdx({}),
   ],
 });

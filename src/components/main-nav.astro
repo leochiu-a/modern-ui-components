@@ -2,7 +2,6 @@
 import { docsConfig } from "@/config/docs";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
-import { Badge } from "@/components/ui/badge";
 
 const pathname = Astro.url.pathname;
 ---
@@ -10,7 +9,6 @@ const pathname = Astro.url.pathname;
 <div class="mr-4 flex">
   <a href="/" class="relative mr-6 flex items-center space-x-2">
     <span class="font-bold">{siteConfig.name}</span>
-    <Badge variant="secondary">Beta</Badge>
   </a>
   <nav class="items-center space-x-6 text-sm font-medium flex">
     {

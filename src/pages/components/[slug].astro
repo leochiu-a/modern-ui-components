@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
 export async function getStaticPaths() {
-  return [{ params: { slug: "button" } }];
+  return [{ params: { slug: "button" } }, { params: { slug: "pagination" } }];
 }
 
 const { slug } = Astro.params;

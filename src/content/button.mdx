@@ -4,6 +4,10 @@ slug: button
 description: My
 ---
 
+import Button from '../registry/Button.tsx';
+
 export const title = "My first MDX post";
 
 # {title}
+
+<Button client:only="react" text="123" />

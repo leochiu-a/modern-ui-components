@@ -31,8 +31,8 @@ export const docsConfig = {
           href: "/components/button",
         },
         {
-          title: "Card",
-          href: "/components/card",
+          title: "Pagination",
+          href: "/components/pagination",
         },
       ],
     },
