@@ -34,6 +34,10 @@ export const docsConfig = {
           title: "Pagination",
           href: "/components/pagination",
         },
+        {
+          title: "Fade In Text",
+          href: "/components/fade-in-text",
+        },
       ],
     },
   ],
