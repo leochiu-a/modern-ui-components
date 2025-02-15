@@ -69,7 +69,7 @@ const nextPage = () => {
     class="mb-[20px] flex items-center justify-center *:font-semibold *:text-txt-base"
   >
     <div
-      class="is-active group join justify-center gap-2 *:h-[28px] *:min-h-0 *:w-[28px] *:!rounded-full *:border-0 *:px-[0px] *:py-[0px] *:shadow-none"
+      class="is-active group join justify-center gap-2 *:h-[28px] *:min-h-0 *:w-[28px] *:rounded-full! *:border-0 *:px-[0px] *:py-[0px] *:shadow-none"
     >
       <button
         :class="[

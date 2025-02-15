@@ -5,7 +5,6 @@ import vercelServerless from "@astrojs/vercel/serverless";
 import react from "@astrojs/react";
 import vue from "@astrojs/vue";
 import mdx from "@astrojs/mdx";
-import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,12 +14,5 @@ export default defineConfig({
     },
   }),
 
-  integrations: [
-    vue(),
-    react(),
-    tailwind({
-      applyBaseStyles: false,
-    }),
-    mdx({}),
-  ],
+  integrations: [vue(), react(), mdx({})],
 });
