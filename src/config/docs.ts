@@ -40,5 +40,14 @@ export const docsConfig = {
         },
       ],
     },
+    {
+      title: "Modern Web UI",
+      items: [
+        {
+          title: "Accordions",
+          href: "/components/accordions",
+        }
+      ],
+    },
   ],
 };
