@@ -21,8 +21,8 @@ importers:
         specifier: ^8.0.7
         version: 8.0.7(astro@5.3.0(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.7)(typescript@5.7.2)(yaml@2.6.1))(react@19.0.0)(rollup@4.34.7)(vue@3.5.13(typescript@5.7.2))
       '@astrojs/vue':
-        specifier: ^5.0.6
-        version: 5.0.6(astro@5.3.0(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.7)(typescript@5.7.2)(yaml@2.6.1))(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.7)(vue@3.5.13(typescript@5.7.2))(yaml@2.6.1)
+        specifier: ^5.0.7
+        version: 5.0.7(astro@5.3.0(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.7)(typescript@5.7.2)(yaml@2.6.1))(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.7)(vue@3.5.13(typescript@5.7.2))(yaml@2.6.1)
       '@heroicons/react':
         specifier: ^2.2.0
         version: 2.2.0(react@19.0.0)
@@ -59,6 +59,9 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
+      solar-singularity:
+        specifier: 'link:'
+        version: 'link:'
       tailwind-merge:
         specifier: ^2.5.5
         version: 2.5.5
@@ -141,8 +144,8 @@ packages:
     peerDependencies:
       astro: ^5.0.0
 
-  '@astrojs/vue@5.0.6':
-    resolution: {integrity: sha512-puAH+QPgmlI4R7ZlIum0ntg/ne/sz6J/CrwdXZor1PBn7xYTfI/Bh4DKvyRuC4gQEOhMwtSKT9HsQ+Xf227F6A==}
+  '@astrojs/vue@5.0.7':
+    resolution: {integrity: sha512-PSES96WbJhozuGBUgMTzbAlQUdAZm0rpQjem+plsT/M0LQWpTZESZm/jf4IW7mYCtKmnAymWCH1meqsUfHCYgw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0}
     peerDependencies:
       astro: ^5.0.0
@@ -3211,7 +3214,7 @@ snapshots:
       - vue
       - vue-router
 
-  '@astrojs/vue@5.0.6(astro@5.3.0(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.7)(typescript@5.7.2)(yaml@2.6.1))(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.7)(vue@3.5.13(typescript@5.7.2))(yaml@2.6.1)':
+  '@astrojs/vue@5.0.7(astro@5.3.0(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.7)(typescript@5.7.2)(yaml@2.6.1))(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.7)(vue@3.5.13(typescript@5.7.2))(yaml@2.6.1)':
     dependencies:
       '@vitejs/plugin-vue': 5.2.1(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.6.1))(vue@3.5.13(typescript@5.7.2))
       '@vitejs/plugin-vue-jsx': 4.1.1(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.6.1))(vue@3.5.13(typescript@5.7.2))
