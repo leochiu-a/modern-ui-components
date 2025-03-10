@@ -46,7 +46,11 @@ export const docsConfig = {
         {
           title: "Accordions",
           href: "/components/accordions",
-        }
+        },
+        {
+          title: "Dialog",
+          href: "/components/dialog",
+        },
       ],
     },
   ],
