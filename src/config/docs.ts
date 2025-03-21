@@ -51,6 +51,10 @@ export const docsConfig = {
           title: "Dialog",
           href: "/components/dialog",
         },
+        {
+          title: "Popover",
+          href: "/components/popover",
+        },
       ],
     },
   ],
