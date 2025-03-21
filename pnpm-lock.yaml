@@ -59,9 +59,6 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
-      solar-singularity:
-        specifier: 'link:'
-        version: 'link:'
       tailwind-merge:
         specifier: ^2.5.5
         version: 2.5.5
